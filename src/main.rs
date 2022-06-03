@@ -8,7 +8,7 @@ fn main() {
     for stream in listner.incoming() {
         let stream = stream.unwrap();
 
-        println!("Connection established!");
+        handle_connection(stream);
     }
 }
 
